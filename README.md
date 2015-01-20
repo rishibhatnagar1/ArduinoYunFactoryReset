@@ -16,13 +16,17 @@ When you see that, check you Wifi network Manager, you will see Arduino Yun XXXX
 If you still don't see that, that could be because by default the OpenWrt comes with wifi disabled. So what you should do is use this command : 
 *uci set wireless.@wifi-device[0].disabled=0; uci commit wireless; wifi*
 In response you will receive something like this:
-*root@Arduino:/# uci set wireless.@wifi-device[0].disabled=0; uci commit wireless
+
+
+root@Arduino:/# uci set wireless.@wifi-device[0].disabled=0; uci commit wireless
 ; wifi
 Configuration file: /var/run/hostapd-phy0.conf
 Using interface wlan0 with hwaddr 90:a2:da:f2:1a:39 and ssid "Arduino Yun-90A2DAF21A39"
 wlan0: interface state UNINITIALIZED->ENABLED
 wlan0: AP-ENABLED 
-*
+
+
+
 And after this you will see the WIFI switched on.
 All the modules that you install are going to take up the 16MB space given on board, my advice is to insert an external memory card and start a file system on that to make things work.
 
