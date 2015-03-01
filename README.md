@@ -1,5 +1,5 @@
 # ArduinoYunFactoryReset
-A small write up on how to reset Arduino Yun when you think you might have messed up the configurations
+A small write up on how to reset Arduino Yun when you think you might have messed up the configuration
 
 Step 1 - Upload the Yun Serial Terminal Code in the Yun from examples in the IDE. If you are not able to upload it for various reasons, use the reset button for 324 and try again. Once this is done, open the serial termnial and select *NEWLINE* at the bottom right of the page. Remember, all the commands you want to write will be written using the small writing bar on top of the page. To enter the commands to the console, press enter.
 
